@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maroof Sweets - Premium Traditional Sweets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Maroof Sweets</h1>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#menu" class="nav-link">Products</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#contact" class="nav-link">Order Now</a>
+                </div>
+                <div class="nav-icons">
+                    <div class="animated-search">
+                        <button class="search-icon-btn" id="search-icon-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <div class="search-expand-container" id="search-expand-container">
+                            <input type="text" placeholder="Search for sweets..." id="search-expand-input">
+                            <button class="search-close-btn" id="search-close-btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <a href="#" class="icon-btn cart-btn" onclick="openCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Carousel Section -->
+    <section id="home" class="hero-carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=1200&q=85" alt="Slide 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?auto=format&fit=crop&w=1200&q=85" alt="Slide 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1200&q=85" alt="Slide 3">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1200&q=85" alt="Slide 4">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?auto=format&fit=crop&w=1200&q=85" alt="Slide 5">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85" alt="Slide 6">
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Maroof Sweets</h2>
+                <p>Your trusted destination for authentic traditional sweets</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>Maroof Sweets has been serving the finest traditional sweets for generations. We take pride in preserving the authentic recipes and techniques passed down through our family.</p>
+                    <p>Every sweet is handcrafted with love, using only the finest ingredients and traditional methods to ensure the perfect taste and texture that our customers have come to love.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Made with Love</h4>
+                            <p>Every sweet is crafted with care and passion</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Natural Ingredients</h4>
+                            <p>Only the finest and freshest ingredients</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <h4>Traditional Methods</h4>
+                            <p>Time-honored recipes and techniques</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h4>Premium Quality</h4>
+                            <p>Excellence in every bite we serve</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="About Maroof Sweets">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Products</h2>
+                <p>Explore our wide variety of traditional sweets</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item" data-item="gulab-jamun" data-price="120">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Gulab Jamun">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Gulab Jamun</h3>
+                        <p>Soft and spongy milk solids soaked in rose-flavored sugar syrup</p>
+                        <div class="menu-footer">
+                            <span class="price">Rs.120/kg</span>
+                            <button class="add-to-cart-btn" onclick="openProductModal('Gulab Jamun', 120, 'Soft and spongy milk solids soaked in rose-flavored sugar syrup', 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80')">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-item="rasgulla" data-price="140">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Rasgulla">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Rasgulla</h3>
+                        <p>Soft cottage cheese balls soaked in light sugar syrup</p>
+                        <div class="menu-footer">
+                            <span class="price">Rs.140/kg</span>
+                            <button class="add-to-cart-btn" onclick="openProductModal('Rasgulla', 140, 'Soft cottage cheese balls soaked in light sugar syrup', 'https://images.unsplash.com/photo-1603532648955-039310d9ed75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80')">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-item="jalebi" data-price="100">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Jalebi">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Jalebi</h3>
+                        <p>Crispy spiral-shaped sweet made from refined flour and soaked in sugar syrup</p>
+                        <div class="menu-footer">
+                            <span class="price">Rs.100/kg</span>
+                            <button class="add-to-cart-btn" onclick="openProductModal('Jalebi', 100, 'Crispy spiral-shaped sweet made from refined flour and soaked in sugar syrup', 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80')">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-item="ladoo" data-price="160">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Ladoo">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Ladoo</h3>
+                        <p>Round sweet balls made from gram flour, semolina, or coconut</p>
+                        <div class="menu-footer">
+                            <span class="price">Rs.160/kg</span>
+                            <button class="add-to-cart-btn" onclick="openProductModal('Ladoo', 160, 'Round sweet balls made from gram flour, semolina, or coconut', 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80')">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-item="barfi" data-price="180">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Barfi">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Barfi</h3>
+                        <p>Dense milk-based sweet with various flavors and garnishes</p>
+                        <div class="menu-footer">
+                            <span class="price">Rs.180/kg</span>
+                            <button class="add-to-cart-btn" onclick="openProductModal('Barfi', 180, 'Dense milk-based sweet cut into diamond or square shapes', 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80')">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-item="kheer" data-price="200">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Kheer">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Kheer</h3>
+                        <p>Rice pudding made with milk, sugar, and aromatic spices</p>
+                        <div class="menu-footer">
+                            <span class="price">Rs.200/kg</span>
+                            <button class="add-to-cart-btn" onclick="openProductModal('Kheer', 200, 'Creamy rice pudding made with milk, sugar, and aromatic spices', 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80')">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <p>Take a look at our delicious creations</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Gulab Jamun Special">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Gulab Jamun Special</h3>
+                        <div class="gallery-price">Rs. 615 MRP</div>
+                        <div class="gallery-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Rasgulla Delight">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Rasgulla Delight</h3>
+                        <div class="gallery-price">Rs. 595 MRP</div>
+                        <div class="gallery-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Jalebi Crunch">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Jalebi Crunch</h3>
+                        <div class="gallery-price">Rs. 595 MRP</div>
+                        <div class="gallery-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Ladoo Premium">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Ladoo Premium</h3>
+                        <div class="gallery-price">Rs. 595 MRP</div>
+                        <div class="gallery-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Barfi Royal">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Barfi Royal</h3>
+                        <div class="gallery-price">Rs. 675 MRP</div>
+                        <div class="gallery-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Kheer Supreme">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Kheer Supreme</h3>
+                        <div class="gallery-price">Rs. 725 MRP</div>
+                        <div class="gallery-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Order Now</h2>
+                <p>Get in touch with us for orders and inquiries</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>021 111 376 376</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@maroofsweets.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Sweet Street, Karachi, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <p>Monday - Sunday: 9:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="10" maxlength="500" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Maroof Sweets</h3>
+                    <p>Your trusted destination for authentic traditional sweets. Made with love and tradition.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Products</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Order Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#menu">Gulab Jamun</a></li>
+                        <li><a href="#menu">Rasgulla</a></li>
+                        <li><a href="#menu">Jalebi</a></li>
+                        <li><a href="#menu">Ladoo</a></li>
+                        <li><a href="#menu">Barfi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> 021 111 376 376</p>
+                    <p><i class="fas fa-envelope"></i> info@maroofsweets.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Sweet Street, Karachi</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Maroof Sweets. All rights reserved.</p>
+                <p style="font-size: 1.08rem; color: #fff; margin-top: 0.4rem; font-weight: 600; letter-spacing: 0.02em; text-shadow: 0 2px 8px rgba(231,76,60,0.18);">
+                  Powered by <a href="https://www.novarosystems.tech/" target="_blank" style="color: #e74c3c; font-weight: 700; text-decoration: underline;">Novaro Systems</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
+                <button class="cart-close" onclick="closeCart()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total: Rs<span id="cartTotal">0</span></span>
+                </div>
+                <div class="cart-actions">
+                    <button class="cart-btn secondary" onclick="clearCart()">Clear Cart</button>
+                    <button class="cart-btn primary" onclick="checkout()">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Product Modal -->
+    <div id="productModal" class="new-product-modal">
+        <div class="new-modal-overlay"></div>
+        <div class="new-modal-container">
+            <div class="new-modal-header">
+                <div class="new-modal-close" onclick="closeProductModal()">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="new-modal-content">
+                <div class="new-product-image-section">
+                    <div class="new-product-image">
+                        <img id="modalProductImage" src="" alt="Product">
+                        <div class="new-image-overlay">
+                            <div class="new-product-badge">
+                                <i class="fas fa-star"></i>
+                                <span>Premium Quality</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="new-product-info-section">
+                    <div class="new-product-header">
+                        <h2 id="modalProductName"></h2>
+                        <div class="new-product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.8)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="new-product-description">
+                        <p id="modalProductDescription"></p>
+                    </div>
+                    
+                    <div class="new-product-pricing">
+                        <div class="new-base-price">
+                            <span class="new-price-label">Base Price:</span>
+                            <span class="new-price-value">Rs<span id="modalProductPrice">0</span>/kg</span>
+                        </div>
+                    </div>
+                    
+                    <div class="new-options-section">
+                        <div class="new-option-group">
+                            <h4>Choose Size</h4>
+                            <div class="new-size-options">
+                                <div class="new-size-option active" data-size="250" data-price="0">
+                                    <div class="new-size-circle">
+                                        <span>250g</span>
+                                    </div>
+                                    <div class="new-size-price">Rs<span id="price250">0</span></div>
+                                </div>
+                                <div class="new-size-option" data-size="500" data-price="0">
+                                    <div class="new-size-circle">
+                                        <span>500g</span>
+                                    </div>
+                                    <div class="new-size-price">Rs<span id="price500">0</span></div>
+                                </div>
+                                <div class="new-size-option" data-size="1000" data-price="0">
+                                    <div class="new-size-circle">
+                                        <span>1kg</span>
+                                    </div>
+                                    <div class="new-size-price">Rs<span id="price1000">0</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="new-quantity-group">
+                            <h4>Quantity</h4>
+                            <div class="new-quantity-controls">
+                                <button class="new-qty-btn" onclick="changeQuantity(-1)">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <div class="new-quantity-display">
+                                    <span id="modalQuantity">1</span>
+                                </div>
+                                <button class="new-qty-btn" onclick="changeQuantity(1)">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="new-total-section">
+                        <div class="new-total-info">
+                            <div class="new-total-label">Total Amount</div>
+                            <div class="new-total-amount">Rs<span id="modalTotalPrice">0</span></div>
+                        </div>
+                        <div class="new-delivery-info">
+                            <i class="fas fa-truck"></i>
+                            <span>Free delivery on orders above Rs.500</span>
+                        </div>
+                    </div>
+                    
+                    <div class="new-action-buttons">
+                        <button class="new-add-to-cart-btn" onclick="addToCartFromModal()">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Add to Cart</span>
+                        </button>
+                        <button class="new-buy-now-btn" onclick="buyNow()">
+                            <i class="fas fa-bolt"></i>
+                            <span>Buy Now</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" title="Back to top" style="display:none;">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <script>
+      // Back to Top Button functionality
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          backToTopBtn.style.display = 'block';
+        } else {
+          backToTopBtn.style.display = 'none';
+        }
+      };
+      backToTopBtn.onclick = function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 
